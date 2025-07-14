@@ -1,9 +1,17 @@
 // Code Keypad Component Here
+import React from 'react'
+import EyesOnMe from './EyesOnMe'
 
-function Keypad (){
-    return (
-        <div></div>
-    )
+export default function Keypad() {
+    function onChange(event) {
+        console.log("Entering password...");
+        
+        
+    }
+  return (
+    <div>
+      <input type='password'onChange={onChange} />
+    </div>
+  )
 }
 
-export default Keypad;
